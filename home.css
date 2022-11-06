@@ -1,0 +1,340 @@
+/* Defining of Colors: */
+:root{
+    --dark-purp: rgb(137, 138, 166);
+    --lilac: rgb(201, 187, 207);
+    --blue: rgb(183, 211, 223);
+    --tealblue-light: rgb(214, 239, 237);
+
+    --light-beige: rgb(240, 235, 227);
+    --dark-beige: rgb(228, 220, 207);
+    --vin-green: rgb(125, 157, 156);
+    --dark-green: rgb(87, 111, 114);
+
+    --pink: rgb(242, 215, 217);
+    --light-lilac: rgb(211, 206, 223);
+    --dark-blue: rgb(156, 180, 204);
+    --darkest-blue: rgb(116, 141, 166);
+
+    --peach-pink: rgb(255, 230, 230);
+    --dark-pink: rgb(242, 209, 209);
+    --powd-blue: rgb(218, 234, 241);
+    --grey-blue: rgb(198, 220, 228);
+
+
+    --border:.1rem solid rgba(0,0,0,.2);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+/*End of Defining of Colors: */
+
+/* Font of Logo */
+.logo{
+  font-family: 'Raleway', sans-serif;
+}
+
+/* CSS Common */
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    font-family: 'Figtree', sans-serif;
+    font-weight: lighter;
+}
+/* End of CSS Common */
+
+/* Start of Header CSS */
+.header{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background: var(--dark-purp);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    padding:1.2rem 7%;
+}
+
+#mainNavbar{
+  background-color: var(--dark-purp);
+  }
+
+#mainLogo{
+  height: 3.125rem;
+  width: 3.125rem;
+  float: left;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.header .logo{
+    color:var(--black);
+    font-size: 2.5rem;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+.header .logo span{
+    color:var(--lilac);
+    text-decoration: none;
+}
+
+.header .navbar{
+  overflow: visible;
+}
+
+.header .navbar a{
+    color: var(--lilac);
+    margin-right: 2rem;
+    font-size: 1.7rem;
+    text-transform: none;
+    text-decoration: none;
+    padding:0.5rem ;
+}
+
+.header .navbar a:hover{
+    color: black;
+}
+
+.navbar-toggler{
+  background-color: var(--dark-purp);
+  border-color: var(--lilac);
+}
+
+#logout{
+  height: 2rem;
+  width: 2rem;
+  padding: 0;
+  margin-top: 0.75rem;
+}
+/* End of Header CSS */
+
+
+/*Start of Navbar Dropdown CSS */
+
+.dropdown {
+  float: left;
+  overflow: inherit;
+}
+
+.dropdown .dropbtn {
+  font-size: 1.7rem;
+  border: none;
+  outline: none;
+  color:  var(--lilac);
+  padding:0.5rem ;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropbtn:hover {
+  background-color:  var(--dark-purp);
+  color: black
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--lilac);
+  color: black;
+  min-width: 10rem;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  /* float: none; */
+  background-color: black;
+  color: var(--dark-purp);
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--light-lilac);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--dark-purp);
+}
+/*End of Navbar Dropdown CSS */
+
+/* Start of Content CSS */
+.big-heading {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.title-image {
+  margin-top: 0rem;
+  width: 60%;
+  transform: rotate(25deg);
+}
+
+#mb{
+  background-color: var(--lilac);
+  border: 0;
+  margin: 1rem 1rem;
+}
+
+#mb:hover {
+  color: var(--dark-purp);
+}
+
+#row1{
+  margin-top: 9.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: center;
+}
+
+#row2{
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.colored-section {
+  background-color: var(--light-lilac);
+  color: black;
+}
+
+.def{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.link-mid{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.def a:hover{
+  color: var(--dark-purp);
+}
+
+.tag{
+  background-color: var(--light-lilac);
+  width: 100%;
+}
+/* End of Content CSS */
+
+
+/* Start of Review/Testimonial CSS Section */
+#testimonials {
+  background-color: var(--light-lilac);
+}
+
+.testimonial-text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: bold;
+}
+
+.testimonial-image {
+  width: 5%;
+  border-radius: 100%;
+  /* margin: 5rem; */
+  text-align: center;
+}
+/* End of Review/Testimonial CSS Section */
+
+/* Misc CSS */
+.white-section {
+  background-color: var(--light-beige);
+}
+
+.container-fluid{
+  padding: 2rem 2rem;
+}
+
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: var(--dark-purp);
+  /* margin-bottom: 1rem; */
+}
+
+.icon:hover {
+  color: var(--lilac);
+}
+
+.category{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  background-color: var(--light-lilac);
+}
+
+p.aboutus{
+  opacity: 0.4;
+}
+/* End of Misc CSS */
+
+/* Start of Footer CSS */
+.footer{
+    position:static;
+    width: 100%;
+    height: 7.5rem;
+    align-items: center;
+    /* justify-content: space-between; */
+    background: var(--dark-purp);
+    text-align: center;
+    padding-top: 1rem;
+    /* padding-bottom: 0.5rem; */
+}
+
+.footer .credit{
+    /* text-transform: capitalize; */
+    font-size: 1rem;
+    color:var(--black);
+}
+
+.contact{
+  height:2.5rem;
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+}
+
+.contact:hover{
+  color: var(--lilac);
+}
+
+#ontop{
+  background-color: var(--lilac);
+  border: 0;
+  margin: 1rem 1rem;
+}
+
+#ontop:hover {
+  color: var(--dark-purp);
+}
+/* End of Footer CSS */
+
+/*Start of Media Query CSS */
+@media (max-width: 40em) {
+.title-image {
+  visibility:hidden;
+}
+}
+/* End of Media Query CSS */

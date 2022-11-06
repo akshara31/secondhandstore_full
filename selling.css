@@ -1,0 +1,465 @@
+/* Defining of Colors: */
+:root{
+    --dark-purp: rgb(137, 138, 166);
+    --lilac: rgb(201, 187, 207);
+    --blue: rgb(183, 211, 223);
+    --tealblue-light: rgb(214, 239, 237);
+
+   --light-beige: rgb(240, 235, 227);
+    --dark-beige: rgb(228, 220, 207);
+    --vin-green: rgb(125, 157, 156);
+    --dark-green: rgb(87, 111, 114);
+
+   --pink: rgb(242, 215, 217);
+    --light-lilac: rgb(211, 206, 223);
+    --dark-blue: rgb(156, 180, 204);
+    --darkest-blue: rgb(116, 141, 166);
+
+   --peach-pink: rgb(255, 230, 230);
+    --dark-pink: rgb(242, 209, 209);
+    --powd-blue: rgb(218, 234, 241);
+    --grey-blue: rgb(198, 220, 228);
+
+    --border:.1rem solid rgba(0,0,0,.2);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+/*End of Defining of Colors: */
+
+
+
+/* Font of Logo */
+.logo{
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+/* CSS Common */
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    font-family: 'Figtree', sans-serif;
+    font-weight: lighter;
+}
+/* End of CSS Common */
+
+
+
+/* Start of Header CSS */
+.header{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background:#254669 ;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    padding:1.2rem 7%;
+}
+
+
+
+#mainNavbar{
+  background-color: #254669 ;
+  }
+
+
+
+#mainLogo{
+  height: 3.125rem;
+  width: 3.125rem;
+  float: left;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+
+
+.header .logo{
+    color:var(--black);
+    font-size: 2.5rem;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+
+
+.header .logo span{
+    color:var(--grey-blue);
+    text-decoration: none;
+}
+
+
+
+.header .navbar{
+  overflow: visible;
+}
+
+
+
+.header .navbar a{
+    color:var(--grey-blue);
+    margin-right: 2rem;
+    font-size: 1.7rem;
+    text-transform: none;
+    text-decoration: none;
+    padding:0.5rem ;
+}
+
+
+
+.header .navbar a:hover{
+    color: black;
+}
+
+
+
+.navbar-toggler{
+  background-color: var(--grey-blue);
+  border-color: var(--grey-blue);
+}
+/* End of Header CSS */
+
+
+
+
+/*Start of Navbar Dropdown CSS */
+
+
+
+.dropdown {
+  float: left;
+  overflow: inherit;
+}
+
+.dropdown .dropbtn {
+  font-size: 1.7rem;
+  border: none;
+  outline: none;
+  color: var(--grey-blue);
+  padding:0.5rem ;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropbtn:hover {
+  background-color:  var(--grey-blue);
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--grey-blue);
+  color: black;
+  min-width: 10rem;
+  z-index: 1;
+}
+
+
+
+.dropdown-content a {
+  /* float: none; */
+  background-color: black;
+  color:var(--grey-blue);
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown-content a:hover {
+  background-color: var(--grey-blue);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+#logout{
+  height: 2rem;
+  width: 2rem;
+  padding: 0;
+  margin-top: 0.75rem;
+}
+/*End of Navbar Dropdown CSS */
+
+/* ################################# */
+
+/*start of content of page*/
+
+.main-section{
+  margin-top:4.5rem;
+  /* background: linear-gradient(#6495ED, #243b55); */
+  /* background: linear-gradient(#e0b0ff, var(--lilac)); */
+  background-color: var(--light-beige);
+  padding: 2rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.phone-container{
+  padding-left: 9rem;
+}
+
+/* start selling form style */
+ body {
+    margin-right:0;
+    padding:0;
+}
+
+/* .custom-file::-webkit-file-upload-button {
+  visibility: hidden;
+} */
+
+
+  .login-box {
+    width: 400px;
+    padding: 40px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+/*     box-shadow: 0 15px 25px rgba(0,0,0,.6); */
+    border-radius: 10px;
+  }
+
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #E6E6FA;
+    text-align: center;
+  }
+
+  .login-box .user-box {
+    position: relative;
+  }
+
+  .login-box .user-box input, select{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--light-beige);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+
+  .login-box .user-box label {
+    position: absolute;
+    top:-30px;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--light-beige);
+    pointer-events: none;
+    transition: .5s;
+  }
+
+  .login-box .user-box input{
+    font-size: 16px;
+    color: #56cad0;
+  }
+
+  .login-box .user-box input::placeholder{
+    visibility: visible;
+    color: var(--light-beige);
+  }
+ 
+  /* 
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:active ~ label{
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  } */
+
+  .glowbutton{
+    border-radius: 0.75rem;
+    background-color: transparent;
+  }
+  .login-box form .glowbutton {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff ;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 30px;
+    letter-spacing: 4px;
+  }
+
+  .login-box .glowbutton:hover {
+    background: #77dd77;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #77dd77,
+                0 0 25px #77dd77,
+                0 0 50px #fff,
+                0 0 100px #DCD0FF;
+  }
+
+  .login-box .glowbutton span {
+    position: absolute;
+    display: block;
+  }
+
+  .login-box .glowbutton span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+
+/*   @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  } */
+
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+
+.big-heading{
+  text-align:center;
+  font-size:4rem;
+  padding-top:11rem;
+}
+
+.small-heading{
+    text-align:center;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.text-ext{
+  text-align:center;
+  padding-top: 3.5rem;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.spanword{
+  color:#77dd77;
+}
+
+
+/* Start of Second page */
+.second-page{
+  /* Created with https://www.css-gradient.com */
+
+  /* background: linear-gradient(#eacda3 , #d6ae7b); */
+  background-color: var(--grey-blue);
+}
+
+.second-page .top-title{
+  padding: 3rem;
+  padding-top: 6rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.second-page .points
+{
+  padding-top: 6rem;
+  text-align: center;
+  width: 80%;
+  margin:auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.selling-image{
+  width:15rem;
+  height:11rem;
+  border-radius: 10%;
+  margin: auto;
+}
+
+.image-caption{
+  padding-top: 1rem;
+}
+
+.solutions{
+  padding: 10rem;
+}
+
+.selling-image4{
+  width:30rem;
+  height:15rem;
+  float:right;
+  border-radius: 5%
+}
+
+.solution-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.solution-list li:before {
+  content: '✓';
+  padding-right: .4rem;
+  margin-left: 0;
+}
+/* End of second page */
+
+
+
+/* end of content of page */
+
+/* Start of Footer CSS */
+.footer{
+    position:static;
+    width: 100%;
+    height: 5rem;
+    align-items: center;
+    /* justify-content: space-between; */
+    background: #254669;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer .credit{
+    /* text-transform: capitalize; */
+    font-size: 1rem;
+    color:var(--grey-blue);
+}
+
+.contact{
+  height:2.5rem;
+  font-size: 1rem;
+  color: var(--grey-blue);
+  text-decoration: none;
+}
+
+.contact:hover{
+  color: var(--grey-blue);
+}
+/* End of Footer CSS */

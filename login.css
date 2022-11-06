@@ -1,0 +1,408 @@
+/* Defining of Colors: */
+:root{
+    --dark-purp: rgb(137, 138, 166);
+    --lilac: rgb(201, 187, 207);
+    --blue: rgb(183, 211, 223);
+    --tealblue-light: rgb(214, 239, 237);
+
+   --light-beige: rgb(240, 235, 227);
+    --dark-beige: rgb(228, 220, 207);
+    --vin-green: rgb(125, 157, 156);
+    --dark-green: rgb(87, 111, 114);
+
+   --pink: rgb(242, 215, 217);
+    --light-lilac: rgb(211, 206, 223);
+    --dark-blue: rgb(156, 180, 204);
+    --darkest-blue: rgb(116, 141, 166);
+
+   --peach-pink: rgb(255, 230, 230);
+    --dark-pink: rgb(242, 209, 209);
+    --powd-blue: rgb(218, 234, 241);
+    --grey-blue: rgb(198, 220, 228);
+
+    --border:.1rem solid rgba(0,0,0,.2);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+/*End of Defining of Colors: */
+
+
+
+/* Font of Logo */
+.logo{
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+/* CSS Common */
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    font-family: 'Figtree', sans-serif;
+    font-weight: lighter;
+}
+/* End of CSS Common */
+
+
+
+/* Start of Header CSS */
+.header{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background: var(--dark-purp);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    padding:1.2rem 7%;
+}
+
+
+#mainNavbar{
+  background-color: var(--dark-purp);
+  }
+
+#mainLogo{
+  height: 3.125rem;
+  width: 3.125rem;
+  float: left;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+
+
+.header .logo{
+    color:var(--black);
+    font-size: 2.5rem;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+
+
+.header .logo span{
+    color:var(--lilac);
+    text-decoration: none;
+}
+
+
+
+.header .navbar{
+  overflow: visible;
+}
+
+
+
+.header .navbar a{
+    color: var(--lilac);
+    margin-right: 2rem;
+    font-size: 1.7rem;
+    text-transform: none;
+    text-decoration: none;
+    padding:0.5rem ;
+}
+
+
+
+.header .navbar a:hover{
+    color: black;
+}
+
+
+
+.navbar-toggler{
+  background-color: var(--dark-purp);
+  border-color: var(--lilac);
+}
+/* End of Header CSS */
+
+
+
+
+/*Start of Navbar Dropdown CSS */
+
+
+
+.dropdown {
+  float: left;
+  overflow: inherit;
+}
+
+
+
+.dropdown .dropbtn {
+  font-size: 1.7rem;
+  border: none;
+  outline: none;
+  color:  var(--lilac);
+  padding:0.5rem ;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+
+.dropbtn:hover {
+  background-color:  var(--dark-purp);
+  color: black
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--lilac);
+  color: black;
+  min-width: 10rem;
+  z-index: 1;
+}
+
+
+
+.dropdown-content a {
+  /* float: none; */
+  background-color: black;
+  color: var(--dark-purp);
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown-content a:hover {
+  background-color: var(--light-lilac);
+}
+
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.dropdown:hover .dropbtn {
+  background-color: var(--dark-purp);
+}
+/*End of Navbar Dropdown CSS */
+
+
+/*start of content of page*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  'Figtree', sans-serif;
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+section .container {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+section .container .user {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+section .container .user .imgBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: #ff0;
+  transition: 0.5s;
+}
+
+section .container .user .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section .container .user .formBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  transition: 0.5s;
+}
+
+section .container .user .formBx form h2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+section .container .user .formBx form input {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  background: #f5f5f5;
+  color: #333;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  margin: 8px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+section .container .user .formBx form input[type='submit'] {
+  max-width: 100px;
+  background: #677eff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+section .container .user .formBx form .signup {
+  position: relative;
+  margin-top: 20px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+section .container .user .formBx form .signup a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #677eff;
+}
+
+section .container .signupBx {
+  pointer-events: none;
+}
+
+section .container.active .signupBx {
+  pointer-events: initial;
+}
+
+section .container .signupBx .formBx {
+  left: 100%;
+}
+
+section .container.active .signupBx .formBx {
+  left: 0;
+}
+
+section .container .signupBx .imgBx {
+  left: -100%;
+}
+
+section .container.active .signupBx .imgBx {
+  left: 0%;
+}
+
+section .container .signinBx .formBx {
+  left: 0%;
+}
+
+section .container.active .signinBx .formBx {
+  left: 100%;
+}
+
+section .container .signinBx .imgBx {
+  left: 0%;
+}
+
+section .container.active .signinBx .imgBx {
+  left: -100%;
+}
+
+@media (max-width: 991px) {
+  section .container {
+    max-width: 400px;
+  }
+
+  section .container .imgBx {
+    display: none;
+  }
+
+  section .container .user .formBx {
+    width: 100%;
+  }
+}
+
+/* end of content of page */
+
+
+
+
+
+
+
+
+/* Start of Footer CSS */
+.footer{
+    position:static;
+    width: 100%;
+    height: 5rem;
+    align-items: center;
+    /* justify-content: space-between; */
+    background: var(--dark-purp);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer .credit{
+    /* text-transform: capitalize; */
+    font-size: 1rem;
+    color:var(--black);
+}
+
+.contact{
+  height:2.5rem;
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+}
+
+.contact:hover{
+  color: var(--lilac);
+}
+/* End of Footer CSS */

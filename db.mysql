@@ -1,0 +1,48 @@
+use iwp;
+
+ create table essentials
+ (Product_ID INT(3) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+ Product_Name VARCHAR(30),
+ Product_Price INT(10),
+ Product_Desc VARCHAR(100),
+ Product_Condition VARCHAR(50),
+ Product_Seller VARCHAR(50),
+ Product_Contact VARCHAR(11),
+ Product_Type VARCHAR(25),
+ Product_URL VARCHAR(100));
+ 
+ ALTER TABLE essentials AUTO_INCREMENT=1;
+
+select * from essentials;
+
+insert into essentials(Product_Name,Product_Price,Product_Desc,Product_Condition,Product_Seller,Product_Contact,Product_Type,Product_URL) values
+('Bucket',150,'Bucket for Bathroom','Good','Preeti','9898635253','Hostel Essentials','./images/bucket.jpg'),
+('Mattress',1500,'Correct Fitting to Bed Frame','Good','Sunaina','4364562523','Hostel Essentials','./images/mattress.png'),
+('Mug',30,'Mug for Bathroom','Good','Keerthi','9087634545','Hostel Essentials','./images/mug.jpg'),
+('Shoe Dabba',150,'Container to Hold Shoes','Amazing','Suresh','9987623452','Hostel Essentials','./images/shoedabba.jpg'),
+('Clock',100,'Digital Clock for Room','Great','Ramesh','6789598767','Hostel Essentials','./images/clock.jpg'),
+('Desk Lamp',70,'Desk Lamp for Desk with Cable','V Good','Reva','2653996485','Hostel Essentials','./images/lamp.jpg'),
+('Lock',300,'Large Size Lock for Room','Good','Tom','7857859566','Hostel Essentials','./images/lock.jpg'),
+('Laundry Bag',150,'Laundry Bag for Room','Amazing','Charan','2485967632','Hostel Essentials','./images/laundry.jpg'),
+('Suitcase',300,'Well Maintained Suitcase with Hard Cover','Good','Murthi','7879653220','Hostel Essentials','./images/suitcase.jpg'),
+('Clothes Hanger',50,'Clothes Hanger to Hang your Clothes in the Cupboard','Great','Preeti','9898635253','Hostel Essentials','./images/hanger.jpg'),
+('Clothes Pin',20,'Clothes Pins for Drying Clothes','Ok','Uma','4545213603','Hostel Essentials','./images/pins.png'),
+('Tumbler',50,'Steel Tumbler','V Good','Raju','4987598778','Hostel Essentials','./images/tumbler.png'),
+('Wall Hooks',10,'Wall hooks for Hanging Belongings','Good','Yogesh','9652886595','Hostel Essentials','./images/hook.jpg'),
+('Table Alarm',220,'Table Alarm for Desk in Good Condition','Great','Mohan','9898635253','Hostel Essentials','./images/alarm.png'),
+('Extension Board',150,'Extension Board for Room','Best','Soham','8755524693','Hostel Essentials','./images/board.jpg'),
+('Pen',5,'Pen','Good','Abraham','9856985585','Stationary','./images/pen.jpg'),
+('Pencil',1,'Pencil','Great','Bill','1234567890','Stationary','./images/pencil1.jpg'),
+('Highlighter',10,'Highlighter','OK','Charlie','7878945456','Stationary','./images/highlighter.jpg'),
+('Stapler',20,'Stapler','V Good','Dennis','1212345456','Stationary','./images/stapler.jpg'),
+('Tape',10,'Tape','OK','Ethan','4545696963','Stationary','./images/tape.jfif'),
+('Ruler',2,'Ruler','V Good','Francis','7474185852','Stationary','./images/ruler.jpg'),
+('Paper Clip',3,'Paper Clip','V Good','Gertude','1212565653','Stationary','./images/paperclip.jpg'),
+('Glue',5,'Glue','Good','Harris','5262364152','Stationary','./images/glue.jpg'),
+('Scissors',30,'Scissors','Great','Isaac','5262344444','Stationary','./images/scissors.jpg');
+
+
+
+
+
+
